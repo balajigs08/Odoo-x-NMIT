@@ -89,6 +89,8 @@ tables scroll horizontally on mobile).
 - All role checks are enforced server-side in `middleware/auth.ts`, not just
   hidden in the UI.
 
+## 👥 PROJECT DOCUMENT ([@balajigs08]([https://github.com/balajigs08](https://drive.google.com/drive/folders/1cg65VpdydmEqMu04LGax2rMY2z6sE4ZK)))
+
 ## 👥 Team & Contributors
 
 Developed as part of the **Odoo × NMIT** Hackathon initiative.

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-white text-ink-900;
+  }
+  * {
+    @apply transition-colors duration-150;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-lavender-200/70 rounded-2xl shadow-card p-5;
+  }
+  .card-hover {
+    @apply hover:shadow-soft hover:-translate-y-0.5 transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-lavender-600 text-white font-medium px-4 py-2 rounded-xl hover:bg-lavender-700 active:scale-[0.98] transition-all duration-150 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply bg-lavender-50 text-lavender-700 font-medium px-4 py-2 rounded-xl border border-lavender-200 hover:bg-lavender-100 active:scale-[0.98] transition-all duration-150;
+  }
+  .input {
+    @apply w-full px-3.5 py-2.5 rounded-xl border border-lavender-200 bg-white placeholder:text-ink-500/60 focus:outline-none focus:ring-2 focus:ring-lavender-400 focus:border-transparent transition-all duration-150;
+  }
+  .label {
+    @apply text-sm font-medium text-ink-700 mb-1.5 block;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  .badge-pending {
+    @apply bg-amber-50 text-amber-700 border border-amber-200;
+  }
+  .badge-approved {
+    @apply bg-emerald-50 text-emerald-700 border border-emerald-200;
+  }
+  .badge-rejected {
+    @apply bg-rose-50 text-rose-700 border border-rose-200;
+  }
+  .badge-present {
+    @apply bg-lavender-100 text-lavender-700;
+  }
+}
